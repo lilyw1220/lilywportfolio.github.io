@@ -1,4 +1,157 @@
-h1 {
+/* basic styling */
+.navigation {
+    background-color: #96ceb4;
+}
+
+.hero {
+    background-color: #ff6f69;
+}
+
+.heroimage {
+  background-color: #fdaacb;
+}
+
+.downarrow {
+  background-color: #b87df7;
+}
+
+.contentheader {
+  background-color: #7dbaf7;
+}
+
+.content {
+    background-color: #ffcc5c;
+}
+
+.contenttext {
+    background-color: #3baf2c;
+}
+
+.footer {
+    background-color: #88d8b0;
+}
+
+.title {
     color: #ff6f69;
+    background-color: #ffeead;
     text-align: center;
+    padding: 3rem 0 1rem;
+    margin: 0rem
+}
+
+.wrapper > div {
+    padding-left: 2rem;
+    color: #ffeead;
+    display: flex;
+    align-items: center;
+    font-size: 2rem;
+}
+
+.row > div {
+    padding-left: 2rem;
+    color: #ffeead;
+    display: flex;
+    align-items: center;
+    font-size: 2rem;
+}
+
+.row > .content  {
+    height: 10rem;
+}
+
+html {
+    padding: 0 1rem;
+    margin: 0 1rem;
+}
+
+body > .row {
+    margin: 0rem;
+}
+
+.row > .hero  {
+    height: 10rem;
+}
+
+.row > .navigation {
+    height: 4rem;
+}
+
+.row > .footer {
+    height: 4rem;
+}
+
+html, body  {
+    background: #ffeead;
+    font-size: 10px;
+}
+
+/* grid styling */
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 4rem 20rem 4rem 4rem 30rem 4rem;
+}
+
+.navigation {
+    grid-column: span 12;
+}
+
+.hero {
+    grid-column: span 6;
+}
+
+
+.heroimage {
+  grid-column: span 6;
+}
+
+.downarrow {
+  grid-column: span 12;
+}
+
+.contentheader {
+  grid-column: span 12;
+}
+
+.content {
+    grid-column: span 6;
+}
+
+.contenttext {
+    grid-column: span 6;
+}
+
+.footer {
+    grid-column: span 12;
+}
+
+@media screen and (max-width: 480px) {
+
+  .wrapper {
+      display: grid;
+      grid-template-columns: repeat(12, 1fr);
+      grid-template-rows: 4rem 20rem 30rem 4rem 4rem 25rem 30rem 4rem;
+  }
+
+    .navigation {
+        grid-column: span 12;
+    }
+
+    .hero {
+
+        grid-column: span 12;
+    }
+
+    .heroimage {
+
+        grid-column: span 12;
+    }
+
+    .content {
+        grid-column: span 12;
+    }
+
+    .contenttext {
+      grid-column: span 12;
+    }
 }
